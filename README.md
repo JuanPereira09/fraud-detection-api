@@ -30,29 +30,20 @@ O objetivo do projeto é simular um serviço backend capaz de receber dados de u
 ## ▶️ Como Executar o Projeto
 
 1. Clone o repositório:
-```bash
 git clone https://github.com/SEU_USUARIO/fraud-detection-api.git
 cd fraud-detection-api
 Crie e ative o ambiente virtual:
 
-bash
-Copiar código
 python -m venv venv
 venv\Scripts\activate
 Instale as dependências:
 
-bash
-Copiar código
 pip install -r requirements.txt
 Execute a aplicação:
 
-bash
-Copiar código
 python -m uvicorn app.main:app --reload
 Acesse a documentação interativa:
 
-arduino
-Copiar código
 http://127.0.0.1:8000/docs
 📌 Endpoints
 POST /fraud/analyze
@@ -60,8 +51,6 @@ Analisa o risco de uma transação financeira.
 
 Exemplo de requisição:
 
-json
-Copiar código
 {
   "user_id": 1,
   "amount": 15000,
@@ -69,8 +58,6 @@ Copiar código
 }
 Exemplo de resposta:
 
-json
-Copiar código
 {
   "id": 1,
   "user_id": 1,
@@ -100,9 +87,6 @@ Regras de negócio
 Persistência em banco de dados
 
 Consumo de API via cliente HTTP
-
-yaml
-Copiar código
 
 ---
 
